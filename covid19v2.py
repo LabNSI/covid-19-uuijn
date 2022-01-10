@@ -26,11 +26,11 @@ def read_CSV(file):
     # https://docs.python.org/3/library/csv.html#csv.reader
     with open(file) as csvfile:
         # Create a dictionnary with all datas
-        reader = csv.DictReader(____)
+        reader = csv.DictReader(csvfile)
         # each row in reader is a dictionary by country
         for row in reader:
             # add row in datas list
-            datas.___(___)
+            datas.append(row)
         # return the list of dictionaries by countries
         return datas
 
